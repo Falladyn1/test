@@ -1,0 +1,28 @@
+.task_item {
+    border: 1px solid var(--bs-tertiary-color);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding: 5px;
+    margin: 1em;
+
+    .task_text {
+        flex: 1;
+
+        .task_content {
+            font-size: 1.25em;
+        }
+
+        .task_description {
+            font-size: 0.85em;
+            color: var(--bs-tertiary-color);
+        }
+    }
+
+    .task_status {
+        font-size: 0.75em;
+        color: var(--bs-primary);
+    }
+}

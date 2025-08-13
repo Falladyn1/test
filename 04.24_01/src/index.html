@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.scss">
+    <script type="module" src="script.js"></script>
+</head>
+<body>
+    <div class="main">
+        <div class="app">
+            <div class="app_header">
+                <h1>ToDo App</h1>
+            </div>
+            <div class="app_content">
+                
+            </div>
+            <div class="app_control">
+                <input class="form-control" type="text" placeholder="Co masz do zrobienia?" id="newTaskContent">
+                <button type="button" class="btn btn-success fancy_button"><i class="bi bi-plus-circle" id="addTaskButton"></i>DODAJ</button>
+            </div>
+        </div>
+    </div>
+
+    <template id="task_template">
+        <div class="task_item">
+            <div class="task_text">
+                <div class="task_content">Zadanie 1</div>
+                <div class="task_description">Opis zadania 1</div>
+            </div>
+            <div class="task_status"> pending </div>
+            <button type="button" class="change_status btn btn-primary"><i class="bi bi-check-circle"></i></button>
+            <button type="button" class="edit_task btn btn-warning"><i class="bi bi-pencil-square"></i></button>
+            <button type="button" class="delete_task btn btn-danger"><i class="bi bi-trash3"></i></button>
+        </div>
+    </template>
+</body>
+</html>
